@@ -378,8 +378,99 @@ body {
     color: #c4b5fd;
     font-size: 11px;
 }
+/* =========================
+   RESEARCH
+========================= */
+
+.research-section {
+    width: 84%;
+    margin: 0 auto;
+    padding: 110px 0 140px;
+}
+
+.research-question {
+    padding: 45px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(139, 92, 246, 0.35);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(124, 58, 237, 0.15),
+            rgba(56, 189, 248, 0.05)
+        );
+}
+
+.research-small-title {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #8b5cf6;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.research-question h3 {
+    max-width: 1000px;
+
+    font-size: clamp(22px, 3vw, 34px);
+
+    line-height: 1.45;
+
+    font-weight: 500;
+}
+
+.research-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.research-card {
+    padding: 28px;
+
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+
+    background: rgba(15, 23, 42, 0.45);
+}
+
+.research-card h4 {
+    margin-bottom: 12px;
+
+    font-size: 18px;
+}
+
+.research-card p {
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
 
 @media (max-width: 700px) {
+        .research-section {
+        width: 88%;
+        padding: 80px 0;
+    }
+
+    .research-question {
+        padding: 28px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
         .projects-section {
         width: 88%;
         padding: 80px 0;
